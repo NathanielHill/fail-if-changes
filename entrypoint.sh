@@ -1,16 +1,8 @@
-#!/bin/bash
-set -e
+#!/bin/sh
 
-STATUS_ARGS=$1
-PATHSPEC=$2
-
-function check() {
-  if [[ -z "$(git status --porcelain $STATUS_ARGS $PATHSPEC)" ]];
-  then
-    echo "0"
-  else
-    echo "1"
-  fi
-}
-
-echo ::set-output name=changed::$(check)
+if [ -z "$(git status --porcelain)" ];
+then
+  exit 0
+else
+  exit 1
+fi
