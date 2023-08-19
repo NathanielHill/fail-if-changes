@@ -1,7 +1,7 @@
 FROM alpine/git
 
-LABEL "repository"="http://github.com/UnicornGlobal/has-changes-action"
-LABEL "homepage"="http://github.com/UnicornGlobal/has-changes-action"
+LABEL "repository"="http://github.com/NathanielHill/fail-if-changes"
+LABEL "homepage"="http://github.com/NathanielHill/fail-if-changes"
 
 ADD entrypoint.sh /
 RUN chmod +x /entrypoint.sh
