@@ -1,8 +1,8 @@
-name: "Has Changes"
+name: "Fail If Changes"
 description: "Check if a git repository has uncommitted changes"
 branding:
-  icon: "info"
-  color: "yellow"
+  icon: "alert-octagon"
+  color: "red"
 runs:
   using: "docker"
   image: "Dockerfile"
