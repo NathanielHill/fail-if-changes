@@ -1,5 +1,7 @@
 #!/bin/sh
 
+git config --system --add safe.directory /github/workspace
+
 if [ -z "$(git status --porcelain)" ];
 then
   exit 0
