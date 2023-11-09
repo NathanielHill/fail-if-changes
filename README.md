@@ -27,5 +27,5 @@ jobs:
       run: touch change.temp
     # This step will evaluate the repo status and report the change
     - name: Check if there are changes
-      uses: NathanielHill/fail-if-changes@latest
+      uses: NathanielHill/fail-if-changes@master
 ```
